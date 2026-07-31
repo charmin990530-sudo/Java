@@ -83,9 +83,9 @@ console.log(metros);
 
 // Pedir el precio de un producto y aplicar un 20% de descuento
 
-let precio = Number(prompt("100"));
+let precio = Number(prompt("Ingrese el precio"));
 
-let descuento = precio * 0.20;
+let descuento = precio * 0.80;
 let precioFinal = precio - descuento;
 
 console.log(precioFinal);
@@ -99,6 +99,8 @@ let nota3 = Number(prompt("Ingrese la tercera nota:"));
 let promedio = (nota1 + nota2 + nota3) / 3;
 
 console.log(promedio);
+
+
 
 
 

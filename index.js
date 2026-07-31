@@ -83,7 +83,7 @@ console.log(metros);
 
 // Pedir el precio de un producto y aplicar un 20% de descuento
 
-let precio = Number(prompt("Ingrese el precio"));
+let precio = Number(prompt("Ingrese el precio:"));
 
 let descuento = precio * 0.20;
 let precioFinal = precio - descuento;
@@ -99,6 +99,22 @@ let nota3 = Number(prompt("Ingrese la tercera nota:"));
 let promedio = (nota1 + nota2 + nota3) / 3;
 
 console.log(promedio);
+
+let numeroDias = Number (prompt("ingrese el numero de dias:"));
+let horas = ( numeroDias * 24);
+let minutos = (numeroDias * 1440);
+
+console.log(`dias en horas igual a: ${numeroDias * horas}`);
+console.log( `dias en minutos igual a : ${numeroDias * minutos}`);
+
+// Pedir la distancia recorrida y el tiempo para calcular la velocidad
+
+let distancia = Number(prompt("Ingrese la distancia recorrida en kilómetros:"));
+let tiempo = Number(prompt("Ingrese el tiempo en horas:"));
+
+let velocidad = distancia / tiempo;
+
+console.log(velocidad);
 
 
 

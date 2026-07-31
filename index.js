@@ -85,7 +85,7 @@ console.log(metros);
 
 let precio = Number(prompt("Ingrese el precio"));
 
-let descuento = precio * 0.80;
+let descuento = precio * 0.20;
 let precioFinal = precio - descuento;
 
 console.log(precioFinal);

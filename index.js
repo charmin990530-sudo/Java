@@ -52,33 +52,55 @@ console.log(edadPerro);
 // pedir una temperatura en c y convertirla en F;
 // pedir una distancia en KM y convertirla a M;
 
-// Pedir la base y la altura al usuario
-let base = parseFloat(prompt("5"));
-let altura = parseFloat(prompt("10"));
+// Pedir datos de un triángulo y decir el área
 
-// Calcular el área
+let base = Number(prompt("Ingrese la base del triángulo:"));
+let altura = Number(prompt("Ingrese la altura del triángulo:"));
+
 let area = (base * altura) / 2;
 
-// Mostrar el resultado
-alert(`El área del triángulo es: ${area}`);
+console.log(area);
 
-// Pedir la temperatura en Celsius
-let celsius = parseFloat(prompt("20"));
+// Pedir una temperatura en C y convertirla a F
 
-// Convertir a Fahrenheit
-let fahrenheit = (celsius * 1.8) + 32;
+let celsius = Number(prompt("Ingrese la temperatura en grados Celsius:"));
 
-// Mostrar el resultado
-alert(`${celsius}°C equivalen a ${fahrenheit}°F`);
+let fahrenheit = (celsius * 9 / 5) + 32;
 
-// Pedir la distancia en kilómetros
-let km = parseFloat(prompt("10"));
+console.log(fahrenheit);
 
-// Convertir a metros
-let metros = km * 1000;
+// Pedir una distancia en KM y convertirla a M
 
-// Mostrar el resultado
-alert(`${km} km equivalen a ${metros} metros`);
+let kilometros = Number(prompt("Ingrese la distancia en kilómetros:"));
+
+let metros = kilometros * 1000;
+
+console.log(metros);
+
+// pedir el precio de un producto y aplicarle un 20% de descuento
+//pedir 3notas al usuario, y decirle la nota final (promedio)
+
+
+// Pedir el precio de un producto y aplicar un 20% de descuento
+
+let precio = Number(prompt("100"));
+
+let descuento = precio * 0.20;
+let precioFinal = precio - descuento;
+
+console.log(precioFinal);
+
+// Pedir 3 notas al usuario y decir la nota final (promedio)
+
+let nota1 = Number(prompt("Ingrese la primera nota:"));
+let nota2 = Number(prompt("Ingrese la segunda nota:"));
+let nota3 = Number(prompt("Ingrese la tercera nota:"));
+
+let promedio = (nota1 + nota2 + nota3) / 3;
+
+console.log(promedio);
+
+
 
 
 

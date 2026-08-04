@@ -186,6 +186,32 @@ if(libras <= bajo){
     console.log('categoria pesado')
 }
 
+// metodo de preparacionn (francesa, moka, v60)
+// cuantos gramos de cafe va a hacer ( 20, 45, 15)
+// ratio francesa = 1/15
+// ratio moka = 1/16
+// ratio v60 = 1/16
+
+let metodo = prompt("¿Qué método de preparación quieres usar? (francesa, moka, v60)");
+let gramos = Number(prompt("¿Cuántos gramos de café vas a usar?"));
+
+let agua;
+
+if (metodo === "francesa") {
+  agua = gramos * 15;
+  console.log(`Método: francesa. Café: ${gramos} g. Agua necesaria: ${agua} ml`);
+} else if (metodo === "moka") {
+  agua = gramos * 16;
+  console.log(`Método: moka. Café: ${gramos} g. Agua necesaria: ${agua} ml`);
+} else if (metodo === "v60") {
+  agua = gramos * 16;
+  console.log(`Método: v60. Café: ${gramos} g. Agua necesaria: ${agua} ml`);
+} else {
+  console.log("Método no reconocido, escribe 'francesa', 'moka' o 'v60'");
+}
+
+
+
 
 
 

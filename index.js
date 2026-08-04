@@ -130,20 +130,43 @@ if(nota < 3) {
     
 }
 
+// tactica de peso
 
-// tactica de peso 
+// masculino
+//bajo = menor a 160 libras
+//medio = entre 160 y 180 libras
+// pesado = mayor a 180 libras
 
+// femenino
+
+//bajo = menor a 115 libras
+// medio = entre 115 y 135 libras
+// pesado = mayor a 135 libras
+
+let genero = prompt("¿Cuál es tu género? (masculino/femenino)");
 let peso = Number(prompt("¿Cuál es tu peso en kilos?"));
 let pesoEnLibras = peso * 2.2046;
 
 console.log(`Tu peso es: ${peso} kg, lo que equivale a ${pesoEnLibras} libras`);
 
-if (peso < 50) {
-  console.log("Puedes competir en la categoría: Peso pluma");
-} else if (peso >= 50 && peso <= 100) {
-  console.log("Puedes competir en la categoría: Peso intermedio");
+if (genero === "masculino") {
+  if (pesoEnLibras < 160) {
+    console.log("Puedes competir en la categoría: Peso bajo");
+  } else if (pesoEnLibras >= 160 && pesoEnLibras <= 180) {
+    console.log("Puedes competir en la categoría: Peso medio");
+  } else {
+    console.log("Puedes competir en la categoría: Peso pesado");
+  }
+} else if (genero === "femenino") {
+  if (pesoEnLibras < 115) {
+    console.log("Puedes competir en la categoría: Peso bajo");
+  } else if (pesoEnLibras >= 115 && pesoEnLibras <= 135) {
+    console.log("Puedes competir en la categoría: Peso medio");
+  } else {
+    console.log("Puedes competir en la categoría: Peso pesado");
+  }
 } else {
-  console.log("Puedes competir en la categoría: Peso pesado");
+  console.log("Género no reconocido, escribe 'masculino' o 'femenino'");
 }
 
 

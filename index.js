@@ -169,22 +169,22 @@ if (genero === "masculino") {
   console.log("Género no reconocido, escribe 'masculino' o 'femenino'");
 }
 
-let bajo = 160;
-let medio = 180;
+// let bajo = 160;
+// let medio = 180;
 
-if(genero == 'f'){
-    bajo = 115;
-    medio = 135;
+// if(genero == 'f'){
+//     bajo = 115;
+//     medio = 135;
 
-}
+// }
 
-if(libras <= bajo){
-    console.log('categoria gallo')
-} else if(libras <= medio){
-    console .log('categoria ligero')
-} else {
-    console.log('categoria pesado')
-}
+// if(libras <= bajo){
+//     console.log('categoria gallo')
+// } else if(libras <= medio){
+//     console .log('categoria ligero')
+// } else {
+//     console.log('categoria pesado')
+// }
 
 // metodo de preparacionn (francesa, moka, v60)
 // cuantos gramos de cafe va a hacer ( 20, 45, 15)

@@ -2,7 +2,7 @@ console.log("HELLO WORLD") // string
 console.log(true); // boolean
 console.log(false); // boolean
 console.log(40); // number
-console.log(30.8); // number
+console.log(30.8); // number 
 
 
 // operaciones matematicas:
@@ -115,6 +115,37 @@ let tiempo = Number(prompt("Ingrese el tiempo en horas:"));
 let velocidad = distancia / tiempo;
 
 console.log(velocidad);
+
+// if
+let nota = 4;
+
+if(nota < 3) {
+    console.log(`el estudiante perdio`);
+
+} else if (nota >= 3 && nota < 4){
+    console.log(`tiene que nivelar`);
+
+} else {
+    console.log(`paso`);
+    
+}
+
+
+// tactica de peso 
+
+let peso = Number(prompt("¿Cuál es tu peso en kilos?"));
+let pesoEnLibras = peso * 2.2046;
+
+console.log(`Tu peso es: ${peso} kg, lo que equivale a ${pesoEnLibras} libras`);
+
+if (peso < 50) {
+  console.log("Puedes competir en la categoría: Peso pluma");
+} else if (peso >= 50 && peso <= 100) {
+  console.log("Puedes competir en la categoría: Peso intermedio");
+} else {
+  console.log("Puedes competir en la categoría: Peso pesado");
+}
+
 
 
 
